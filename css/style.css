@@ -1,0 +1,201 @@
+/*Width of 320px is considered as basis. For other screen sizes media queries created*/
+/*COLORS
+accent : #70DBFF
+dark background: #292929*/
+body {
+	font-family: 'Josefin Slab', serif;	
+	font-size: 18px;
+}
+
+header h1 {		
+	padding-bottom: 5%; 
+	font-size: 2em;	
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.4em;
+	color: #70DBFF;		
+}
+
+section {
+	padding: 5%;	
+	text-align: center;
+}
+
+.row-height {
+	display: table;
+	table-layout: fixed;
+	height: 100%;
+	width: 100%;    
+}
+
+.col-middle {
+	vertical-align: middle;		 
+}
+
+#img-container {
+	padding:5%;
+}
+
+#resume, #contacts  {	
+	background-color: #292929;
+}
+
+#resume p,  #contacts p{
+	color: white;
+}
+
+.carousel-container {
+	margin-top: 5%;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-inner h3 {
+	color:  #70DBFF;	
+	font-size: 1em;
+}
+
+.carousel-indicators {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 3%;    
+    width: 100%;
+    border-top: 1px solid #eee;
+    background: #ffffff;
+}
+
+.carousel-indicators li {
+    display: inline-block;    
+    width: 45px;
+    height: 5px;
+    border: none;
+    border-radius: 0px;
+    background: #eeeeee;
+    text-indent: -999px;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    width: 45px;
+    height: 5px;
+    border: none;
+    border-radius: 0px;
+    background: #70DBFF;
+}
+
+.app-screenshot {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 7%;    
+}
+
+.copyright-container {
+	padding: 1%;
+	background-color: #292929;
+}
+
+.copyright-container p {
+	font-size: 0.5em;
+	color: white;
+	text-align: center;
+}
+
+@media (min-width: 480px) {
+	header h1 {
+		font-size: 3.3em;
+	}	
+
+	h2 {
+		font-size: 2em;		
+	}	
+
+	p, .carousel-inner h3 {
+		font-size: 1.2em;
+	}	
+
+	.copyright-container p {
+		font-size: 0.7em;	
+	}	
+}
+
+@media (min-width: 768px) {	
+	header h1 {
+		font-size: 4em;
+	}	
+
+	h2 {
+		font-size: 2.5em;		
+	}	
+
+	p, .carousel-inner h3 {
+		font-size: 1.4em;
+	}	
+
+	.copyright-container p {
+		font-size: 0.9em;	
+	}		
+}
+
+@media (min-width: 3img-container52px) {
+
+	html, header, body, header > .container-fluid, header > .container-fluid > .row {
+		height: 0%;	
+	}
+
+	header h1 {		
+		padding: 0%;
+		color: white;
+		font-size: 3.5em;
+	}	
+
+	p, .carousel-inner h3 {
+		font-size: 1.6em;
+	}	
+
+	.copyright-container p {
+		font-size: 1.1em;	
+	}	
+
+	.col-md-height {
+		display: table-cell;	
+		float: none;		
+		height: 30%;
+	}
+
+	.col-right {
+		background-color: #292929;
+	}
+
+	#img-container {
+		padding:0%;
+		height: 30%;
+	}
+}
+
+@media (min-width: 1200px) {
+	header h1 {	
+		font-size: 4.3em;
+	}
+
+	h2 {
+		font-size: 3em;		
+	}	
+
+	p, .carousel-inner h3 {
+		font-size: 1.8em;
+	}	
+
+	.copyright-container p {
+		font-size: 1.3em;	
+	}	
+}
